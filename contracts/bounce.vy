@@ -1,5 +1,5 @@
 # @version 0.2.0
-# @title bouncer
+# @title bounce
 # @author Kenny
 
 myAddress         :  public(address)
@@ -12,17 +12,17 @@ def __init__():
 
 @external
 @payable
-def sendONE( _myAddress : address , _receiverAddress : address ):
+def bounceONE( _myAddress : address , _receiverAddress : address ):
   assert self.myAddress  ==  ZERO_ADDRESS
   self.myAddress          =  _myAddress
   self.receiverAddress    =  _receiverAddress
 
 @external
-def grabOne():
+def grabONE():
   assert self.receiverAddress  ==  msg.sender
   selfdestruct(msg.sender)
 
 @external
-def bounceONE():
+def bounceBackONE():
   assert self.myAddress  ==  msg.sender
   selfdestruct(msg.sender)
