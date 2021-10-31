@@ -19,5 +19,5 @@ def __init__():
 @payable
 def buildBouncer( _receiverAddress : address ):
   self.myBouncer = create_forwarder_to( self.bounceContract , value=msg.value )
-  bouncer( self.myBouncer ).sendONE( msg.sender , _receiverAddress )
+  bounce( self.myBouncer ).bounceONE( msg.sender , _receiverAddress )
   log BuildBouncer( msg.sender , self.myBouncer )
