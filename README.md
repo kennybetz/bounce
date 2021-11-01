@@ -1,2 +1,2 @@
 # bounce
-Reversible transactions - ONE + ETH
+Retreivable transfers - ONE + ETH
