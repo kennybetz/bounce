@@ -1,0 +1,69 @@
+[
+  {
+    "name": "BuildBouncer",
+    "inputs": [
+      {
+        "name": "myAddress",
+        "type": "address",
+        "indexed": false
+      },
+      {
+        "name": "receiverAddress",
+        "type": "address",
+        "indexed": false
+      },
+      {
+        "name": "myBounceAddress",
+        "type": "address",
+        "indexed": false
+      }
+    ],
+    "anonymous": false,
+    "type": "event"
+  },
+  {
+    "stateMutability": "nonpayable",
+    "type": "constructor",
+    "inputs": [],
+    "outputs": []
+  },
+  {
+    "stateMutability": "payable",
+    "type": "function",
+    "name": "buildBouncer",
+    "inputs": [
+      {
+        "name": "_receiverAddress",
+        "type": "address"
+      }
+    ],
+    "outputs": [],
+    "gas": 94300
+  },
+  {
+    "stateMutability": "view",
+    "type": "function",
+    "name": "bounceContract",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "gas": 2418
+  },
+  {
+    "stateMutability": "view",
+    "type": "function",
+    "name": "myBouncer",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "gas": 2448
+  }
+]
