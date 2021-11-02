@@ -1,6 +1,6 @@
-# @version 0.2.0
-# @title bounce
-# @author Kenny
+# @version  ^0.2.0
+# @title    bounce
+# @author   Kenny
 
 myAddress         :  public(address)
 receiverAddress   :  public(address)
